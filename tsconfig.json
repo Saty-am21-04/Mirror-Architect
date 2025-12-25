@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6",
+    "outDir": "out",
+    "rootDir": "src",
+    "lib": [
+      "ES6", 
+      "DOM",
+      "ES2018", 
+      "ESNext.AsyncIterable" 
+    ],
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true 
+  },
+  "exclude": [
+    "node_modules",
+    ".vscode-test",
+    "webview-ui"
+  ]
+}

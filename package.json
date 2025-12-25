@@ -1,0 +1,29 @@
+{
+  "name": "mirror-architect",
+  "displayName": "Mirror Architect",
+  "version": "0.0.1",
+  "publisher": "satyam",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onCommand:mirrorArchitect.start"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "build-all": "npx tsc -p ./ && cd webview-ui && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/vscode": "^1.107.0",
+    "typescript": "^5.9.3"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "mirrorArchitect.start",
+        "title": "Mirror Architect: Start"
+      }
+    ]
+  }
+}
